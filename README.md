@@ -11,4 +11,16 @@ This repository hosts the final project developed by Group 3 for the DNA/RNA Dyn
 - `progetto.html`: Rendered HTML report with interactive plots and outputs.
 - `progetto.R`: Standalone R script for the core pipeline steps.
 
+## Requirements
 
+This project requires R (>= 4.0) and the following packages:
+```r
+install.packages("BiocManager")
+install.packages("factoextra")
+install.packages("qqman")
+install.packages("gplots")
+
+BiocManager::install("minfi")
+BiocManager::install("IlluminaHumanMethylation450kmanifest")
+BiocManager::install("IlluminaHumanMethylation450kanno.ilmn12.hg19")
+'''
