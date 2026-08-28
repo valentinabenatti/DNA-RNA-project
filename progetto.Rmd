@@ -15,9 +15,6 @@ output:
 In this initial step, the R environment is prepared by clearing the workspace and setting the working directory. After ensuring that the necessary packages are installed and loaded, we import the cleaned Illumina 450K manifest file which contains probe informations. Finally, the sample sheet information is parsed from the data directory, and the raw IDAT files are loaded into an RGChannelSet object (named RGset) to store the raw Red and Green fluorescence intensities for each physical address on the microarray.
 
 ```{r, message=FALSE, warning=FALSE}
-# Clear the environment to start with a clean state 
-rm(list=ls())
-
 # Install necessary libraries if they are missing (conditional to prevent knitting errors)
 if (!requireNamespace("minfi", quietly = TRUE)) BiocManager::install("minfi", ask = FALSE)
 if (!requireNamespace("IlluminaHumanMethylation450kmanifest", quietly = TRUE)) BiocManager::install("IlluminaHumanMethylation450kmanifest", ask = FALSE)
