@@ -1,9 +1,5 @@
 ## ----message=FALSE, warning=FALSE---------------------------------------------------------------------------------------------
-# Clear the environment to start with a clean state 
-rm(list=ls())
-
-#set your correct working directory:
-setwd("~/progetto_DNA_RNA/")
+# setwd("path/to/your/project/folder") # Uncomment if needed
 
 # Install necessary libraries if they are missing (conditional to prevent knitting errors)
 if (!requireNamespace("minfi", quietly = TRUE)) BiocManager::install("minfi", ask = FALSE)
