@@ -23,4 +23,3 @@ install.packages("gplots")
 BiocManager::install("minfi")
 BiocManager::install("IlluminaHumanMethylation450kmanifest")
 BiocManager::install("IlluminaHumanMethylation450kanno.ilmn12.hg19")
-'''
