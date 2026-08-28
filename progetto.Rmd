@@ -18,9 +18,6 @@ In this initial step, the R environment is prepared by clearing the workspace an
 # Clear the environment to start with a clean state 
 rm(list=ls())
 
-#set your correct working directory:
-setwd("~/progetto_DNA_RNA/")
-
 # Install necessary libraries if they are missing (conditional to prevent knitting errors)
 if (!requireNamespace("minfi", quietly = TRUE)) BiocManager::install("minfi", ask = FALSE)
 if (!requireNamespace("IlluminaHumanMethylation450kmanifest", quietly = TRUE)) BiocManager::install("IlluminaHumanMethylation450kmanifest", ask = FALSE)
